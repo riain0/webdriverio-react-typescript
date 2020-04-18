@@ -19,14 +19,6 @@
     "noEmit": true,
     "jsx": "react",
     "baseUrl": ".",
-    "paths": {
-      "*": [
-        "./*"
-      ],
-      "src/*": [
-        "./src/*"
-      ]
-    },
     "types": [
       "node",
       "@wdio/mocha-framework",
@@ -34,7 +26,6 @@
     ]
   },
   "include": [
-    "src",
-    "test/**/*.ts"
+    "src"
   ]
 }
