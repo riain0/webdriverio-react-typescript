@@ -17,9 +17,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./*"
+      ],
+      "src/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "node",
+      "@wdio/mocha-framework",
+      "@wdio/sync"
+    ]
   },
   "include": [
-    "src"
+    "src",
+    "test/**/*.ts"
   ]
 }
